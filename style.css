@@ -24,6 +24,7 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    display: inline-block; /* Ensure horizontal layout */
 }
 
 nav ul li a, nav ul li button {
@@ -31,16 +32,20 @@ nav ul li a, nav ul li button {
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
+    background-color: transparent; /* Button background transparent */
+    border: none;
+    padding: 10px 20px; /* Add some padding for the buttons */
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 nav ul li button {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+    padding: 10px 20px; /* Button padding */
+    background-color: transparent; /* Transparent background for buttons */
 }
 
-nav ul li button:hover, nav ul li a:hover {
-    color: #bb86fc;
+nav ul li a:hover, nav ul li button:hover {
+    color: #bb86fc; /* Hover color */
 }
 
 .hero h1 {
