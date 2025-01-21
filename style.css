@@ -16,17 +16,31 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
+nav ul li a, nav ul li button {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul li button:hover, nav ul li a:hover {
+    color: #bb86fc;
 }
 
 .hero h1 {
@@ -76,6 +90,7 @@ form button {
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
