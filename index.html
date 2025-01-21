@@ -1,117 +1,63 @@
 <!DOCTYPE html>
-<html>
-  
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>About Me</title>
-  <style>
-    /* Add some style to make the resume look nice */
-   body {
-  background-color: green; /* Replace with your chosen color */
-    }
-    
-    
-    
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    .section-header {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-    .item {
-      margin-bottom: 10px;
-    }
-    .item-title {
-      font-weight: bold;
-      display: inline-block;
-      width: 150px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Webpage</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <div class="section-header">Work Experience</div>
-    <!-- Add your work experience here -->
-    <div class="item">
-      <div class="item-title">Data Scientist</div>
-      <div>PetroChina</div>
-      <div>Feb 2022 - Present</div>
-      <ul>
-        <li>Developed data analytics model for predicting interfacial tension and wettability during surfactant injection using a reservoir simulation model.</li>
-        <li>Coupled data analytics and partial differential equations to improve the performance of the reservoir simulation.</li>
-      </ul>
-      
-      <div class="item-title">Data Scientist-Internship</div>
-      <div>Ada Analytics </div>
-      <div>Feb 2021 - May 2021</div>
-      <ul>
-        <li>Developed a time-series data-driven predictive model for the home temperature to minimize fire risks.</li>
-        <li>Received, cleaned, and prepared data from clients using PostgreSQL.</li>
-      </ul>
-      
-      <div class="item-title">Data Analytics Researcher</div>
-      <div>Equinor Company </div>
-      <div>Sep 2016 - Dec 2017</div>
-      <ul>
-        <li>Determined the relevant parameters in carbon dioxide (CO2)-Enhanced Oil Recovery (EOR) based on the objective function (hydrocarbon production/Net Present Value) through statistical analysis and prepared a new database eastern offshore field using Python and MySQL.</li>
-        <li>Developed a predictive model for CO2 injection performance in an eastern Canada offshore reservoir using data analytics techniques like Artificial Neural Network (ANN) and Support Vector Machine (SVM) in R and Python.</li>
-      </ul>
-      
-    </div>
-    <!-- Add more work experience items here -->
-    
-    <div class="section-header">Summary</div>
-    <!-- Add a summary of your professional experience and skills -->
-    <p>Data Scientist familiar with the gathering, cleaning, and organizing of data for use by technical and non-technical colleagues. Advanced understanding of data science, algorithm design, workflows, and other analytical techniques required for being a successful data scientist with sustainable data-driven models. Highly organized, motivated and industrious, with significant background in chemical and petroleum engineering. The following list highlights my expertise:<p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to My Personal Webpage</h1>
+            <p>Your brief tagline here</p>
+        </div>
+    </header>
 
-     <p>  Experienced in data-driven analytics, predictive modeling, statistical modeling, integrating statistical methods, artificial and computational intelligence techniques.<p>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Brief introduction about yourself.</p>
+    </section>
 
-     <p>  Hands-on developing predictive tools incorporating big-data analytics, commercial simulation packages, and analytical tools, focusing on the energy industry.<p>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project Title</h3>
+            <p>Short description of the project.</p>
+        </div>
+        <!-- Add more project cards as needed -->
+    </section>
 
-     <p>  Hands-on experience with Python (Programming Language) libraries (Pandas, PyTorch, Scikit-Learn, Tensorflow, Keras, XGBoost, Matplotlib, and SciPy) required for data analytics, data visualization, and predictive modeling.<p>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
 
-     <p>  Comprehensive experience in the design and implementation of CI/CD and DevOps for Agile manifesto, working with technologies and platforms including Azure and AWS.</p>
-    
-    <div class="section-header">Education</div>
-    <!-- Add your education here -->
-    <div class="item">
-      <div class="item-title">PhD-Chemical Engineering</div>
-      <div>University of Calgary</div>
-      <div>Jan 2018 - Feb 2022</div>
-    </div>
-    
-    <div class="item-title">MEng-Process Engineering</div>
-      <div>Memorial University of Newfoundland</div>
-      <div>Sep 2016 - Jan 2018</div>
-    </div>
-    
-    <div class="section-header">Skills</div>
-    <!-- Add your skills here -->
-    <ul>
-      <li>Azure, AWS, NLP, Time Series </li>
-      <li>Forecasting, Programming Languages: Python, R, MATLAB, C++.</li>
-      <li>Database Software: MySQL, SQLite, PopSQL, PostgreSQL, Hadoop</li>
-      <li>Computer Applications: Microsoft Office Package, LATEX.</li>
-      <li>Visualization software: Tableau, Power BI, Excel, Google Charts</li>
-      <li>Repositories: GitHub, Azure Git</li>
-      <li>Agile/SCRUM development</li>
-    </ul>
-    
-    <div class="section-header">License</div>
-    <!-- Add any awards or certifications you have received here -->
-    <ul>
-      <li>Certified Data Science Professional</li>
-      <li>AWS Cloud Practitioner Essentials </li>
-    </ul>
-  </div>
+    <footer>
+        <p>&copy; 2025 Mohammadali Ahmadi. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
+
+
+
+
