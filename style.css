@@ -1,4 +1,4 @@
-/* styles.css */
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,97 +7,155 @@ body {
 }
 
 header {
-    background-color: #282c34;
-    color: white;
+    background-color: #333;
+    padding: 20px 0;
     text-align: center;
-    padding: 50px 0;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 nav ul li {
+    display: inline-block;
     margin: 0 15px;
-    display: inline-block; /* Ensure horizontal layout */
 }
 
-nav ul li a, nav ul li button {
-    color: white;
+nav ul li a {
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
     transition: color 0.3s;
-    background-color: transparent; /* Button background transparent */
-    border: none;
-    padding: 10px 20px; /* Add some padding for the buttons */
-    cursor: pointer;
-    border-radius: 5px;
 }
 
-nav ul li button {
-    padding: 10px 20px; /* Button padding */
-    background-color: transparent; /* Transparent background for buttons */
+nav ul li a:hover {
+    color: #bb86fc;
 }
 
-nav ul li a:hover, nav ul li button:hover {
-    color: #bb86fc; /* Hover color */
+/* Hero Section */
+.hero {
+    background: #282c34;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin: 20px 0;
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-section {
-    padding: 50px;
-    text-align: center;
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
 }
 
-.project-card {
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-}
-
-footer {
-    background-color: #282c34;
+.cta-button {
+    background-color: #4CAF50;
     color: white;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 18px;
     border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #282c34;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
     transition: background-color 0.3s;
 }
 
-form button:hover {
+.cta-button:hover {
+    background-color: #45a049;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Contact Form */
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
     background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer .social-links a:hover {
+    color: #bb86fc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
 }
